@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {FaBars, FaTimes, FaFacebook, FaInstagram, FaRegCalendarCheck} from 'react-icons/fa';
-
 import Logo from '../assets/bbLogo.png';
+import {Link} from 'react-scroll';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -15,11 +15,11 @@ const Navbar = () => {
 
         {/*MENU*/}
         <ul className='hidden md:flex'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Gallery</li>
-            <li>Store</li>
-            <li>Calendar/Contact</li>
+            <li><Link to='home' smooth={true} duration={500}></Link>Home</li>
+            <li><Link to='about' smooth={true} duration={500}></Link>About</li>
+            <li><Link to='gallery' smooth={true} duration={500}></Link>Gallery</li>
+            <li><Link to='store' smooth={true} duration={500}></Link>Store</li>
+            <li><Link to='contact' smooth={true} duration={500}></Link>Calendar/Contact</li>
         </ul>
 
         {/*HAMBURGER MENU*/}

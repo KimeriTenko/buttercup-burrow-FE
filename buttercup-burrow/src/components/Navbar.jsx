@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import {FaBars, FaTimes} from 'react-icons/fa';
+import {FaBars, FaTimes, FaFacebook, FaInstagram, FaRegCalendarCheck} from 'react-icons/fa';
+
 import Logo from '../assets/bbLogo.png';
+
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
@@ -35,8 +37,28 @@ const Navbar = () => {
         </ul>
         
         {/*SOCIAL LINKS*/}
-        <div className='hidden'>
-
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+            <ul>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F5BBED]'>
+                    <a className='flex justify-between items-center w-full text-[#49443D]'
+                    href="/">
+                        Facebook <FaFacebook size={30} />
+                    </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#A9D586]'>
+                    <a className='flex justify-between items-center w-full text-[#49443D]'
+                    href="/">
+                        Instagram <FaInstagram size={30} />
+                    </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F5676A]'>
+                    <a className='flex justify-between items-center w-full text-[#49443D]'
+                    href="/">
+                        Contact <FaRegCalendarCheck size={30} />
+                    </a>
+                </li>
+        
+            </ul>
         </div>
     </div>
   )

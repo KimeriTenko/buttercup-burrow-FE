@@ -1,6 +1,9 @@
-import About from "./components/About";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
+import Store from "./components/Store";
 
 function App() {
   return (
@@ -8,6 +11,9 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Contact />
+      <Gallery />
+      <Store />
     </div>
   );
 }

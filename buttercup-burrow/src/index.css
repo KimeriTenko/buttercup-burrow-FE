@@ -14,3 +14,20 @@
     @apply cursor-pointer;
   }
 }
+
+/* Gallery Image Pics */
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+/* Hover Effect for Gallery*/
+.content-div:hover {
+  background-image: linear-gradient(
+      to right,
+    #A9D586,    
+    #E6ADDD   
+  )!important;
+}

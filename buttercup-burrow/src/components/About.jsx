@@ -7,11 +7,11 @@ const About = () => {
     <div name='About' className='w-full h-screen bg-[#002C64] text-[#FCF2D4]'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full px-4 grid sm:grid-cols-2 gap-8'>
-               <div className='sm:text-right pb-8 pl-4'>
+               <div className='sm:text-right pt-8 pb-8 pl-4'>
                     <p className='text-4xl font-bold inline border-b-4 border-[#F5BBED]'>
                     About Us
                     </p>
-                    <p className='text-4xl pt-8 font-bold'>We are artists crafting original custom quilts, digital art, and linotype cut prints.</p>
+                    <p className='text-4xl pt-8 font-bold'>We are artists crafting original custom quilts, digital art, and linocut prints.</p>
                 </div>
                 <div></div>
                 <div>

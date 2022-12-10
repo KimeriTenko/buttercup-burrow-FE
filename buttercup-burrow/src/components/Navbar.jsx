@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {FaBars, FaTimes, FaFacebook, FaInstagram, FaRegCalendarCheck} from 'react-icons/fa';
 import Logo from '../assets/bbLogo.png';
-import {Link} from 'react-scroll';
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -15,11 +15,11 @@ const Navbar = () => {
 
         {/*MENU*/}
         <ul className='hidden md:flex'>
-            <li><Link to='home' smooth={true} duration={500}></Link>Home</li>
-            <li><Link to='about' smooth={true} duration={500}></Link>About</li>
-            <li><Link to='gallery' smooth={true} duration={500}></Link>Gallery</li>
-            <li><Link to='store' smooth={true} duration={500}></Link>Store</li>
-            <li><Link to='contact' smooth={true} duration={500}></Link>Calendar/Contact</li>
+            <li><a href='/home'>Home</a></li>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/gallery'>Gallery</a></li>
+            <li><a href='/store'>Store</a></li>
+            <li><a href='/contact'>Contact</a></li>
         </ul>
 
         {/*HAMBURGER MENU*/}
@@ -29,11 +29,11 @@ const Navbar = () => {
         
         {/*MOBILE MENU*/}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#002C64] flex flex-col justify-center items-center'}>
-            <li className='py-6 text-4xl'>Home</li>
-            <li className='py-6 text-4xl'>About</li>
-            <li className='py-6 text-4xl'>Gallery</li>
-            <li className='py-6 text-4xl'>Store</li>
-            <li className='py-6 text-4xl'>Calendar/Contact</li>
+            <li className='py-6 text-4xl'><a href='/home'>Home</a></li>
+            <li className='py-6 text-4xl'><a href='/about'>About</a></li>
+            <li className='py-6 text-4xl'><a href='/gallery'>Gallery</a></li>
+            <li className='py-6 text-4xl'><a href='/store'>Store</a></li>
+            <li className='py-6 text-4xl'><a href='/contact'>Contact</a></li>
         </ul>
         
         {/*SOCIAL LINKS*/}
@@ -53,7 +53,7 @@ const Navbar = () => {
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F5676A]'>
                     <a className='flex justify-between items-center w-full text-[#49443D]'
-                    href="/">
+                    href="/contact">
                         Contact <FaRegCalendarCheck size={30} />
                     </a>
                 </li>
@@ -64,4 +64,4 @@ const Navbar = () => {
   )
 };
 
-export default Navbar
+export default Navbar;

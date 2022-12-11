@@ -8,7 +8,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center pt-3 px-4 bg-[#002C64] text-[#FCF2D4]'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center pt-3 px-4 bg-[#6B9A97] text-[#FCF2D4]'>
         <div>
             <img src={Logo} alt="Logo" style={{width: '100px'}} />
         </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
         
         {/*MOBILE MENU*/}
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#002C64] flex flex-col justify-center items-center'}>
+        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#646B8E] flex flex-col justify-center items-center'}>
             <li className='py-6 text-4xl'><a href='/home'>Home</a></li>
             <li className='py-6 text-4xl'><a href='/about'>About</a></li>
             <li className='py-6 text-4xl'><a href='/gallery'>Gallery</a></li>
@@ -39,19 +39,19 @@ const Navbar = () => {
         {/*SOCIAL LINKS*/}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
             <ul>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F5BBED]'>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#C991BC]'>
                     <a className='flex justify-between items-center w-full text-[#49443D]'
-                    href="/">
+                    href="https://www.facebook.com/buttercupburrowstudios">
                         Facebook <FaFacebook size={30} />
                     </a>
                 </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#A9D586]'>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#609288]'>
                     <a className='flex justify-between items-center w-full text-[#49443D]'
-                    href="/">
+                    href="https://www.instagram.com/buttercupburrowstudios/?igshid=YmMyMTA2M2Y%3D">
                         Instagram <FaInstagram size={30} />
                     </a>
                 </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F5676A]'>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F79D65]'>
                     <a className='flex justify-between items-center w-full text-[#49443D]'
                     href="/contact">
                         Contact <FaRegCalendarCheck size={30} />

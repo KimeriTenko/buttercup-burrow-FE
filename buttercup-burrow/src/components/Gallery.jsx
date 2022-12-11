@@ -5,11 +5,11 @@ import React from 'react';
 const Gallery = () => {
   
   return (
-    <div name='gallery' className='w-full md:h-screen text-[#49443D] bg-[#F8FAF6]'>
+    <div name='gallery' className='w-full md:h-screen text-[#A29682] bg-[#F8FAF6]'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-          <p className='text-4xl font-bold inline border-b-4 text-[#49443D] border-[#F5676A]'>
-            Work
+          <p className='text-4xl font-bold inline border-b-4 text-[#A29682] border-[#C991BC]'>
+            Gallery
           </p>
           <p className='py-6'>Check out some of our work</p>
         </div>
@@ -19,7 +19,7 @@ const Gallery = () => {
           
     {/* Grid Item */}
     <div style={{backgroundImage: `url(${1})`}} 
-            className='shadow-md shadow-[#F5BBED] group container rounded-md flex justify-center items-center mx-auto content-div'>
+            className='shadow-md shadow-[#A29682] group container rounded-md flex justify-center items-center mx-auto content-div'>
     
     {/* Hover Effects */}
     <div className="opacity-0 group-hover:opacity-100 ">

@@ -4,11 +4,11 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div name='About' className='w-full h-screen bg-[#002C64] text-[#FCF2D4]'>
+    <div name='About' className='w-full h-screen bg-[#F8FAF6] text-[#A29682]'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full px-4 grid sm:grid-cols-2 gap-8'>
                <div className='sm:text-right pt-8 pb-8 pl-4'>
-                    <p className='text-4xl font-bold inline border-b-4 border-[#F5BBED]'>
+                    <p className='text-4xl font-bold inline border-b-4 border-[#F5BBED] text-[#F79D65]'>
                     About Us
                     </p>
                     <p className='text-4xl pt-8 font-bold'>We are artists crafting original custom quilts, digital art, and linocut prints.</p>

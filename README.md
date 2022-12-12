@@ -1,2 +1,2 @@
-# buttercup-burrow-FE
-Frontend
+# buttercup-burrow-full
+Frontend & Backend

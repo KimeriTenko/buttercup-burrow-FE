@@ -15,15 +15,16 @@
   }
 }
 
-/* Gallery Image Pics */
+/* Gallery/Store Image Pics */
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 250px;
+  color: #555047;
 }
 
-/* Hover Effect for Gallery*/
+/* Hover Effect for Gallery/Store*/
 .content-div:hover {
   background-image: linear-gradient(
       to right,

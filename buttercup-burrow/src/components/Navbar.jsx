@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {FaBars, FaTimes, FaFacebook, FaInstagram, FaRegCalendarCheck} from 'react-icons/fa';
+import {AiOutlineSearch, AiOutlineShoppingCart} from 'react-icons/ai';
 import Logo from '../assets/bbLogo.png';
 
 
@@ -27,6 +28,21 @@ const Navbar = () => {
             {!nav ? <FaBars /> : <FaTimes />}
         </div>
         
+        {/*SEARCH INPUT*/}
+        <div className='bg-[#F8D894] text-[#646B8E] rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]'>
+        <AiOutlineSearch size={25} />
+        <input
+          className='bg-transparent p-2 w-full focus:outline-none'
+          type='text'
+          placeholder='Search'
+        />
+        </div>
+
+        {/*CART BUTTON*/} 
+        <button className='bg-[#F8D894] text-[#646B8E] hidden md:flex items-center py-2 rounded-full'>
+        <AiOutlineShoppingCart size={22} className='mr-3' />Cart    
+        </button>
+
         {/*MOBILE MENU*/}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#646B8E] flex flex-col justify-center items-center'}>
             <li className='py-6 text-4xl'><a href='/home'>Home</a></li>

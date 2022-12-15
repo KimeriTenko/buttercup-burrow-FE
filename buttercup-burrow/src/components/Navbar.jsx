@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center pt-5 px-4 bg-[#6B9A97] text-[#FCF2D4]'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center pb-5 pt-5 px-4 bg-[#6B9A97] text-[#FCF2D4]'>
         <div>
             <img src={Logo} alt="Logo" style={{width: '100px'}} />
         </div>
@@ -23,13 +23,8 @@ const Navbar = () => {
             <li><a href='/contact'>Contact</a></li>
         </ul>
 
-        {/*HAMBURGER MENU*/}
-        <div onClick={handleClick} className='md:hidden z-10'>
-            {!nav ? <FaBars /> : <FaTimes />}
-        </div>
-        
-        {/*SEARCH INPUT*/}
-        <div className='bg-[#F8D894] text-[#646B8E] rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]'>
+         {/*SEARCH INPUT*/}
+         <div className='bg-[#F8D894] text-[#646B8E] rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]'>
         <AiOutlineSearch size={25} />
         <input
           className='bg-transparent p-2 w-full focus:outline-none'
@@ -42,6 +37,11 @@ const Navbar = () => {
         <button className='bg-[#F8D894] text-[#646B8E] hidden md:flex items-center py-2 rounded-full'>
         <AiOutlineShoppingCart size={22} className='mr-3' />Cart    
         </button>
+
+        {/*HAMBURGER MENU*/}
+        <div onClick={handleClick} className='md:hidden z-10'>
+            {!nav ? <FaBars /> : <FaTimes />}
+        </div>
 
         {/*MOBILE MENU*/}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#646B8E] flex flex-col justify-center items-center'}>

@@ -5,12 +5,12 @@ import {data} from './data.js';
 const app = express();
 
 app.get('/api/items', (req, res) => {
-    res.send(data.items);  
+    res.send(data.items);
 });
 
 const port = process.env.PORT || 5003;
 app.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
+    console.log(`Server listening on port http://localhost:${port}`);
 });
 
 export default server;

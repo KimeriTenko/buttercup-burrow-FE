@@ -62,6 +62,7 @@ const Store = () => {
               <div className='flex justify-between px-2 py-4'>
                 <p className='font-bold'>{item.name}</p>
                 <p><span className='bg-[#F8FAF6] text-[#555047] p-1 rounded-full'>{item.price}</span></p>
+                <button className='text-[#555047] bg-[#F8D894] flex:wrap'>Add to Cart</button>
                 </div>
             </div>
           ))}

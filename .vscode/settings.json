@@ -4,6 +4,8 @@
         "cloudinary",
         "Familypicture",
         "Fuerte",
+        "mailgun",
+        "streamifier",
         "wallhangings"
     ]
 }

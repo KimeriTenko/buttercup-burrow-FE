@@ -5,13 +5,13 @@ import React from 'react';
 const Gallery = () => {
   
   return (
-    <div name='gallery' className='w-full md:h-screen text-[#A29682] bg-[#F8FAF6]'>
+    <div name='gallery' className='w-full md:h-full text-[#A29682] bg-[#F8FAF6]'>
       <div className='max-w-[1640px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 text-[#A29682] border-[#C991BC]'>
             Gallery
           </p>
-          <p className='py-6'>Check out some of our work</p>
+          <p className='py-6 text-4xl'>Check out some of our work</p>
         </div>
 
         {/* Container for artwork */}

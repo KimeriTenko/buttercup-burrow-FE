@@ -1,5 +1,6 @@
 const Product = require("../models/Product");
 
+{/*GET all products*/}
 const getProducts = async (req, res) => {
   try {
     const products = await Product.find({});
@@ -10,6 +11,7 @@ const getProducts = async (req, res) => {
   }
 };
 
+{/*GET individual products*/}
 const getProductById = async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);

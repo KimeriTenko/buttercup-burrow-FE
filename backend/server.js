@@ -14,13 +14,12 @@ const app = express();
 // Add this line to get rid of the first error I got
 mongoose.set("strictQuery", true);
 
-
-app.use(express.json());
-
 // Routes
 app.get('/api/items', (req, res) => {
     res.send(data.items);
 });
+
+app.use(express.json());
 
 app.use("/api/products", productRoutes);
 

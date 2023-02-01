@@ -13,6 +13,6 @@ app.get('/api/items', (req, res) => {
 });
 
 // Listen
-const PORT = process.env.PORT || 5003;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT.log(`Server listening on port http://localhost:${PORT}`)
 );

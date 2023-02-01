@@ -1,0 +1,25 @@
+- STUPIDLY broke my code and had to work to get it back including installing some react files again
+- ADDED productRoutes.js. EDITs productControllers.js, server.js
+- ADDED products.js, Product.js, seederScript.js, EDITs to package.json,data.js, I FIXED MONGO LIKE I WAS THE NEW SHERIFF IN A WESTERN BY MEL BROOKS
+- NEW server.js file for backend, config for db, basic install for backend json and dotenv
+- MERGE
+- ADDED backend, axios
+- ADDED add to cart button on store page
+- FIXED filter sort
+- ADDED more store items, EDIT to contact.jsx and small adjustments to navbar, store, home, and gallery
+- ADDED store.jsx, data.js, category.jsx
+- MERGE
+- EDIT to gallery.jsx to fix grid display
+- EDIT color palette about.jsx
+- Update README.md
+- EDIT to make social media links fully functional, EDIT to make contact form functional, EDIT color gradient index.css, EDIT to add folders within assets file
+- removed smooth scroll
+- EDITs to app.js, gallery.jsx, index.css GALLERY CODE
+- ADDED contact.jsx
+- ADDED about.jsx, EDIT navbar.jsx
+- ADDED Home page
+- EDIT to Navbar.jsx, ADDED asset folder
+- ADDED navbar.jsx
+- INITIAL
+- Initial commit
+:

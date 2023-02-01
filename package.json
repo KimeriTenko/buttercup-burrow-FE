@@ -11,14 +11,18 @@
     "data:import": "node backend/seederScript.js"
   },
   "dependencies": {
+    "axios": "^1.2.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.8.0",
     "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.5.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.8",
-    "react-update": "^0.4.4"
+    "react-switch": "^7.0.0",
+    "react-update": "^0.4.4",
+    "redux": "^4.2.0"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",
